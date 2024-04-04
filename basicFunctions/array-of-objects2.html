@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var people = [
+                            {
+                            "firstname": "praveen",
+                            "lastname": "gubbala",
+                            "age": 36,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 10000
+                            },
+                            {
+                            "firstname": "srikanth",
+                            "lastname": "gubbala",
+                            "age": 32,
+                            "gender": "male",
+                            "city": "bengaluru",
+                            "salary": 20000
+                            },
+                            {
+                            "firstname": "pradeep",
+                            "lastname": "reddy",
+                            "age": 21,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "mudiraj",
+                            "age": 20,
+                            "gender": "female",
+                            "city": "nalgonda",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "nikhil",
+                            "lastname": "m",
+                            "age": 22,
+                            "gender": "male",
+                            "city": "guntur",
+                            "salary": 2000
+                            },
+                            {
+                            "firstname": "riya",
+                            "lastname": "bhadouria",
+                            "age": 14,
+                            "gender": "female",
+                            "city": "indore",
+                            "salary": 40000
+                            }
+                            ];
+                            // //Print all the firstnames.
+                            // d=people.map(function(f){
+                            //     return f.firstname
+
+                            // })
+                            // console.log(d)
+
+                            //Print all the full name
+
+
+                            // a=people.map(function(m){
+                            //     return m.firstname+" "+m.lastname
+                            // })
+                            // console.log(a)
+
+                            //Print only those names whose age is more than 25.
+
+                            // c=people.filter(function(q){
+                            //     return q.age>25
+                            // })
+                            // console.log(c)
+                            
+                            // //Print all female names
+
+                            // b=people.filter(function(f){
+                            //     return f.gender==="female"
+                            // })
+                            // console.log(b)
+
+
+                            //Print only those names whose salary is more than 30000 and increase their salaries by 15%.
+
+
+                            // d= people.filter(function(s){
+                            //     return s.salary>25000
+                            // })
+                            // console.log(d)
+                            // k=d.map(function(z){
+                            //     return z.salary+z.salary*0.15
+                            // })
+                            // console.log(k)
+
+                            //Using prompt, print only those names whose city is "hyd".
+
+                            d=prompt()
+                            i=people.filter(function(m){
+                                return m.city==="hyd"
+
+                            })
+                            console.log(i)
+
+                            v=i.map(function(r){
+                                return r.firstname
+
+
+                            })
+                            console.log(v)
+
+
+    </script>
+</body>
+</html>

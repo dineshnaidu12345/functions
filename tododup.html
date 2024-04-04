@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="d23">
+    <button onclick="abc()">Add more</button>
+    <ul id="dd"></ul>
+    <script>
+        ar=["dinesh","naidu","saikumar"]
+        function din(){
+            document.getElementById("dd").innerHTML=""
+        ar.forEach(function(a,i){
+           
+            var k =document.createElement("li")
+            var btn=document.createElement("button")
+            btn.innerHTML="del"
+            k.innerHTML=a
+            document.getElementById("dd").appendChild(k)
+            
+            k.appendChild(btn)
+            btn.onclick=function ad(){
+                alert(i)
+            }
+            k.onclick
+            
+
+        })
+    }
+    din()
+        function abc(){
+            var t=document.getElementById("d23").value
+            ar.push(t)
+            din()
+            console.log(ar)
+        }
+    </script>
+</body>
+</html>

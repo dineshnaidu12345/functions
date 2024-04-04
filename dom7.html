@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="d3"></ol>
+    
+    <script>
+         var students = [		
+                                    {
+                                        "firstname": "praveen",
+                                        "age": 36,
+                                        "subjects":['angular','nodejs','reactjs','java']
+                                    }, 
+                                    {
+                                        "firstname": "srikanth",
+                                        "age": 32,
+                                        "subjects":['react','mongodb']
+                                    }, 
+                                    {
+                                        "firstname": "pradeep",
+                                        "age": 21,
+                                        "subjects":['express','mongoose','python']
+                                    }
+                            ]
+                        students.forEach(function(stu){
+                            var d=document.createElement("li")
+                            d.innerHTML=stu.firstname
+                            document.getElementById("d3").appendChild(d)
+
+                            var a=document.createElement("ol")
+                            stu.subjects.forEach(function(sub){
+                               
+                                var g=document.createElement("li")
+                                g.innerHTML=sub
+                                a.appendChild(g)
+                                d.appendChild(a)
+                            })
+                           
+
+                        })
+
+
+    </script>
+</body>
+</html>

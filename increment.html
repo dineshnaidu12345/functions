@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 id="d1">100</h1>
+<button onclick="inc()">Increment</button>
+<button onclick="dec()">Decrement</button>
+<button onclick="res()" >Reset</button>
+<body>
+    <script>
+      var i=  document.getElementById("d1").innerHTML;
+      function inc(){
+        i++
+        document.getElementById("d1").innerHTML=i
+
+      }
+      function dec(){
+        i--
+        document.getElementById("d1").innerHTML=i
+      }
+      function res(){
+        i=100
+        document.getElementById("d1").innerHTML=i
+      }
+
+
+    </script>
+    
+</body>
+</html>

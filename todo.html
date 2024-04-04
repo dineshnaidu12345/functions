@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="d12">
+    <button onclick="abc()">Add List</button>
+    <ul id="d1"></ul>
+    <script>
+        ar=["Dinesh","pavan","naidu"]
+        function din(){
+            document.getElementById("d1").innerHTML=""  
+      ar.forEach(function(s){
+       
+
+        var a=document.createElement("li")
+        a.innerHTML=s
+        
+        document.getElementById("d1").appendChild(a)
+      })}
+      din()
+      function abc(){
+        var x=document.getElementById("d12").value
+        ar.push(x)
+        din()
+        console.log(ar)
+      }
+
+      
+    </script>
+</body>
+</html>
