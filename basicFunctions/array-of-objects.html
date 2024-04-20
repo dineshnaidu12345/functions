@@ -51,111 +51,111 @@
                                 "manufacturer": "White Canyon",				
                             }
                         ];
-                            // //Print all the product names
-                            // var x=products.map(function(product){
-                            //     return product.name
+                            //Print all the product names
+                            var x=products.map(function(product){
+                                return product.name
 
-                            // })
-                            // console.log(x)
-
-
+                            })
+                            console.log(x)
 
 
-                            //Print all the hardgoods.
-                            // var y=products.filter(function(k){
-                            //     return k.type==="HardGood"
+
+
+                            Print all the hardgoods.
+                            var y=products.filter(function(k){
+                                return k.type==="HardGood"
                                 
                                 
                              
                                
-                            // })
-                            // var x=y.map(function(b){
-                            //     return b.name
+                            })
+                            var x=y.map(function(b){
+                                return b.name
 
-                            // })
-                            // console.log(x)
-
-
-                        //     //Print all the softwares
-                        //     var a=products.filter(function(k){
-                        //         return k.type==="Software"
-                        //     })
-                        //   var b=a.forEach(function(p){
-                        //     console.log(p.name)
-
-                        //   })
-                        //   console.log(b)
+                            })
+                            console.log(x)
 
 
-                        // Print all the categories.
+                            //Print all the softwares
+                            var a=products.filter(function(k){
+                                return k.type==="Software"
+                            })
+                          var b=a.forEach(function(p){
+                            console.log(p.name)
+
+                          })
+                          console.log(b)
 
 
-
-                        // var l=products.map(function(k){
-                        //     return k.category
-
-                        // })
-                        // console.log(l)
-
-                        //Print only the products manufactured by Duracell.
+                        Print all the categories.
 
 
 
+                        var l=products.map(function(k){
+                            return k.category
 
+                        })
+                        console.log(l)
 
-                        // d=products.filter(function(k){
-                        //     return k.manufacturer==="Duracell"
-                        // })
-                        // console.log(d)
-
-
-                    //     //Print the product names in ascending order of their prices.
-
-
-                    //   o=  products.sort(function(a,b){
-                    //         if(a.price<b.price){
-                    //             return -1
-                    //         }
-                    //         else{
-                    //             return 1
-                    //         }
-                    //     })
-                    //     f=o.map(function(n){
-                    //         return n.name
-                    //     })
-                    //     console.log(f)
-
-
-                    //Print only those products whose price is more than 14.99
-
-                    // r=products.filter(function(q){
-                    //     return q.price>14.99
-                    // })
-                    // console.log(r)
+                        Print only the products manufactured by Duracell.
 
 
 
 
-                    // Print only those products whose price is less than 9.99.
 
-                    // r=products.filter(function(q){
-                    //     return q.price<9.99
-                    // })
-                    // console.log(r)
-
+                        d=products.filter(function(k){
+                            return k.manufacturer==="Duracell"
+                        })
+                        console.log(d)
 
 
-                    // //Print the total price of all the hardgoods.
-                    // g=products.filter(function(e){
-                    //     return e.type==="HardGood"
-                    // })
-                    // d=g.reduce(function(a,b){
-                    //     return a+b.price
-                    // },0)
-                    // console.log(d/g.length)
+                        //Print the product names in ascending order of their prices.
 
 
-                    //Print the average price of the softwares.
+                      o=  products.sort(function(a,b){
+                            if(a.price<b.price){
+                                return -1
+                            }
+                            else{
+                                return 1
+                            }
+                        })
+                        f=o.map(function(n){
+                            return n.name
+                        })
+                        console.log(f)
+
+
+                    Print only those products whose price is more than 14.99
+
+                    r=products.filter(function(q){
+                        return q.price>14.99
+                    })
+                    console.log(r)
+
+
+
+
+                    Print only those products whose price is less than 9.99.
+
+                    r=products.filter(function(q){
+                        return q.price<9.99
+                    })
+                    console.log(r)
+
+
+
+                    //Print the total price of all the hardgoods.
+                    g=products.filter(function(e){
+                        return e.type==="HardGood"
+                    })
+                    d=g.reduce(function(a,b){
+                        return a+b.price
+                    },0)
+                    console.log(d/g.length)
+
+
+                    Print the average price of the softwares.
 
 
                     
